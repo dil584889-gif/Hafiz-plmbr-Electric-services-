@@ -1,23 +1,265 @@
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hafiz Plumber Pir Mahal</title>
-<link rel="icon" href="logo.png">
-<link rel="manifest" href="manifest.json">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#f0f8ff;text-align:center;font-family:sans-serif}
-header{background:#0a3d62;color:#fff;padding:30px}
-header img{width:180px;height:180px;border-radius:50%;border:4px solid #fff;background:#fff}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafiz Plumber & Electrician - Pir Mahal</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f0f8ff;
+            color: #333;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        header {
+            background: #0a3d62;
+            color: #fff;
+            padding: 20px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            margin-bottom: 10px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        .card h3 {
+            color: #0a3d62;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f8ff;
+            padding-bottom: 8px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        /* Services List */
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .service-item {
+            background: #f9f9f9;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 14px;
+            border-right: 4px solid #0a3d62;
+        }
+        /* Form Styling */
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            font-size: 14px;
+            text-align: right;
+        }
+        .btn-location {
+            background: #4a69bd;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .btn-submit {
+            background: #25D366;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+        .btn-map {
+            background: #eccc68;
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-<header>
-<img src="logo.png">
-<h1>حافظ پلمبر سروس پیرمحل</h1>
-<p>پلمبر، سیوریج، فٹنگ - 24 گھنٹے</p>
-</header>
+
+    <header>
+        <img src="logo.png" alt="حافظ پلمبر">
+        <h1>حافظ پلمبر اینڈ الیکٹریشن سروس</h1>
+        <p class="subtitle">پلمبر، سیوریج، فٹنگ اور الیکٹرک کا کام - پیرمحل (24 گھنٹے سروس)</p>
+    </header>
+
+    <div class="container">
+
+        <!-- پلمبر کے کاموں کی تفصیل -->
+        <div class="card">
+            <h3><i class="fa-solid fa-wrench"></i> ہمارے کام (Our Services)</h3>
+            <div class="services-grid">
+                <div class="service-item">🛠️ پائپ فٹنگ اور مرمت</div>
+                <div class="service-item">🚽 واش روم اور کچن فٹنگ</div>
+                <div class="service-item">💧 موٹر اور گیزر کی انسٹالیشن</div>
+                <div class="service-item">⚡ الیکٹرک وائرنگ اور بورڈز</div>
+                <div class="service-item">💡 پنکھے اور لائٹس کی فٹنگ</div>
+                <div class="service-item">🌀 سیوریج لائن کی صفائی</div>
+            </div>
+        </div>
+
+        <!-- کسٹمر فارم جہاں سے آرڈر ڈائریکٹ آپ کے واٹس ایپ پر جائے گا -->
+        <div class="card">
+            <h3><i class="fa-solid fa-file-signature"></i> کام بک کریں (Book Service)</h3>
+            
+            <label for="cust-name">آپ کا نام (Your Name):</label>
+            <input type="text" id="cust-name" placeholder="اپنا نام لکھیں..." required>
+
+            <label for="cust-phone">فون نمبر (Phone Number):</label>
+            <input type="tel" id="cust-phone" placeholder="03XXXXXXXXX" required>
+
+            <label for="work-type">کام کی نوعیت (Work Type):</label>
+            <select id="work-type">
+                <option value="پلمبنگ کا کام (Plumbing)">پلمبنگ کا کام (Plumbing)</option>
+                <option value="الیکٹریشن کا کام (Electrician)">الیکٹریشن کا کام (Electrician)</option>
+                <option value="دونوں کام (Both)">دونوں کام (Both)</option>
+            </select>
+
+            <label for="problem">مسئلہ تفصیل سے لکھیں (Describe Issue):</label>
+            <textarea id="problem" rows="3" placeholder="مسئلے کی تفصیل لکھیں (مثال کے طور پر: نل کا خراب ہونا، تار جل جانا وغیرہ)"></textarea>
+
+            <label>کام کی جگہ کی لوکیشن (Work Location):</label>
+            <button type="button" class="btn-location" onclick="getLocation()">
+                <i class="fa-solid fa-location-crosshairs"></i> اپنی موجودہ لوکیشن شامل کریں
+            </button>
+            <input type="text" id="location-url" placeholder="لوکیشن لنک یہاں خود بخود آ جائے گا" readonly>
+
+            <button type="button" class="btn-submit" onclick="sendToWhatsApp()">
+                <i class="fa-brands fa-whatsapp"></i> حافظ دلشاد سے رابطہ کریں
+            </button>
+        </div>
+
+        <!-- پلمبر کی لوکیشن (آپ کی دکان یا لائیو لوکیشن کا لنک) -->
+        <div class="card">
+            <h3><i class="fa-solid fa-map-location-dot"></i> ہماری لوکیشن (Our Shop/Office)</h3>
+            <p style="font-size: 14px; margin-bottom: 10px;">آپ ہماری دکان کی لوکیشن دیکھنے کے لیے نیچے دیے گئے بٹن پر کلک کر سکتے ہیں:</p>
+            <!-- آپ اس لنک کو اپنی دکان کے گوگل میپ لنک سے بدل سکتے ہیں -->
+            <a href="https://maps.google.com/?q=Pir+Mahal" target="_blank" class="btn-map">
+                <i class="fa-solid fa-map-pin"></i> گوگل میپ پر دیکھیں
+            </a>
+        </div>
+
+    </div>
+
+    <script>
+        let locationCoords = "";
+
+        // کسٹمر کی لائیو لوکیشن حاصل کرنے کا فنکشن
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError);
+            } else {
+                alert("آپ کا براؤزر لوکیشن کو سپورٹ نہیں کرتا۔");
+            }
+        }
+
+        function showPosition(position) {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+            locationCoords = `https://www.google.com/maps?q=${lat},${lon}`;
+            document.getElementById("location-url").value = "لوکیشن کامیابی سے حاصل ہو گئی ہے! ✅";
+            alert("لوکیشن کامیابی سے شامل کر دی گئی ہے۔");
+        }
+
+        function showError(error) {
+            alert("لوکیشن حاصل کرنے میں مسئلہ پیش آیا۔ براہ کرم اپنے موبائل کی GPS لوکیشن آن کریں۔");
+        }
+
+        // واٹس ایپ پر ڈیٹا بھیجنے کا فنکشن (مکمل کنٹرول آپ کے پاس)
+        function sendToWhatsApp() {
+            const name = document.getElementById("cust-name").value;
+            const phone = document.getElementById("cust-phone").value;
+            const workType = document.getElementById("work-type").value;
+            const problem = document.getElementById("problem").value;
+            const locationUrl = locationCoords ? locationCoords : "لوکیشن فراہم نہیں کی گئی۔";
+
+            if (!name || !phone) {
+                alert("براہ کرم اپنا نام اور فون نمبر لازمی درج کریں!");
+                return;
+            }
+
+            // خوبصورت واٹس ایپ میسج فارمیٹ
+            const message = `*نئی سروس کی درخواست*%0A%0A` +
+                            `*نام:* ${name}%0A` +
+                            `*فون نمبر:* ${phone}%0A` +
+                            `*کام کی نوعیت:* ${workType}%0A` +
+                            `*مسئلہ:* ${problem}%0A` +
+                            `*کسٹمر کی لوکیشن لنک:* ${locationUrl}`;
+
+            // آپ کا موبائل نمبر 03470643244
+            const whatsappNumber = "923470643244"; 
+            const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
 </body>
 </html>
