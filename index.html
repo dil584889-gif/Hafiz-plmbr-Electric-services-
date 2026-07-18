@@ -6,7 +6,23 @@
 <title>حافظ پلمبر اینڈ الیکٹریشن سروس پیرمحل - Hafiz Dilshad 03470643244</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500;700&family=Inter:wght@600;800&display=swap" rel="stylesheet">
-<style>
+<style>import logoUrl from "./logo.webp"; // آپ کا دیا ہوا لوگو
+
+// Live Tracking State
+const [etaSec, setEtaSec] = useState(18*60);
+const [distance, setDistance] = useState(2.3);
+const [plumberLoc, setPlumberLoc] = useState("غلہ منڈی چوک، پیرمحل");
+
+// فی کلومیٹر 100 روپے
+const fare = distance * 100;
+
+// Reviews - پیرمحل، کمالیہ، رجانہ
+const reviews = [
+  {name:"عرفان احمد", city:"پیرمحل", text:"20 منٹ میں آ کر موٹر ٹھیک کر دی"},
+  {name:"علی رضا", city:"کمالیہ", text:"300 روپے میں بہترین کام"},
+  {name:"محمد شہزاد", city:"رجانہ", text:"وائرنگ صاف ستھرا کام"},
+  {name:"رانا بلال", city:"پیرمحل", text:"رات 11 بجے آدھے گھنٹے میں پہنچ گئے"},
+]
 .urdu{font-family:'Noto Nastaliq Urdu',serif}
 .en{font-family:'Inter',sans-serif}
 </style>
