@@ -1,3 +1,16 @@
+<!DOCTYPE html>
+<html lang="ur" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حافظ پلمبر اینڈ الیکٹریشن سروس پیرمحل - Hafiz Dilshad 03470643244</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@500;700&family=Inter:wght@600;800&display=swap" rel="stylesheet">
+<style>
+.urdu{font-family:'Noto Nastaliq Urdu',serif}
+.en{font-family:'Inter',sans-serif}
+</style>
+</head>
 <body class="bg-[#f6f8fb] text-slate-800">
 
 <div class="bg-[#0f172a] text-white text-[11px] tracking-widest en py-2 text-center">
@@ -56,15 +69,17 @@
 </div>
 
 <div class="space-y-6">
-<div class="bg-[#0f172a] rounded-[24px] p-7 text-white">
+<!-- سینٹرڈ لوکیشن سیکشن -->
+<div class="bg-[#0f172a] rounded-[24px] p-7 text-white text-center flex flex-col items-center justify-center">
 <h3 class="en font-black text-[20px]">Pir Mahal aur gird o nawah me fori service</h3>
 <p class="urdu text-[15px] opacity-80 mt-3" dir="rtl">پیرمحل، شورکوٹ روڈ، رجانہ، سندھیلیانوالی اور قریبی علاقوں میں 24 گھنٹے ہنگامی سروس</p>
-<a href="https://www.google.com/maps/search/Pir+Mahal" target="_blank" class="mt-5 block h-[48px] bg-white text-black rounded-xl en font-bold flex items-center justify-center">📍 Google Map Par Dekhen</a>
-<div class="mt-4 bg-white/10 border border-white/10 rounded-xl p-3 flex justify-between items-center">
+<a href="https://www.google.com/maps/search/Pir+Mahal" target="_blank" class="mt-5 w-full max-w-[280px] h-[48px] bg-white text-black rounded-xl en font-bold flex items-center justify-center mx-auto">📍 Google Map Par Dekhen</a>
+<div class="mt-4 bg-white/10 border border-white/10 rounded-xl p-3 flex justify-between items-center w-full max-w-[280px]">
 <span class="en font-black">03470643244</span>
 <a href="tel:03470643244" class="w-9 h-9 bg-white text-black rounded-full grid place-items-center">📞</a>
 </div>
 </div>
+
 <div class="bg-white rounded-[24px] border p-6">
 <h3 class="en font-bold">📝 Kaam Book Karen</h3>
 <form onsubmit="book(event)" class="mt-4 grid gap-3">
@@ -106,7 +121,7 @@ const work=document.getElementById('work').value;
 const issue=document.getElementById('issue').value;
 const loc=document.getElementById('loc').value;
 const msg=`Assalam o Alaikum Hafiz Bhai,%0AName: ${name}%0APhone: ${phone}%0AKaam: ${work}%0AMasla: ${issue}%0ALocation: ${loc}%0APir Mahal service chahiye.`;
-document.getElementById('waBtn').href=`https://wa.me/923470643244?text=${msg}`;
+window.open(`https://wa.me/923470643244?text=${msg}`, '_blank');
 }
 </script>
 </body>
