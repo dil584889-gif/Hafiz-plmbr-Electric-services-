@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+import logoUrl from "./logo.webp"; // آپ کا دیا ہوا لوگو
+
+// Live Tracking State
+const [etaSec, setEtaSec] = useState(18*60);
+const [distance, setDistance] = useState(2.3);
+const [plumberLoc, setPlumberLoc] = useState("غلہ منڈی چوک، پیرمحل");
+
+// فی کلومیٹر 100 روپے
+const fare = distance * 100;
+
+// Reviews - پیرمحل، کمالیہ، رجانہ
+const reviews = [
+  {name:"عرفان احمد", city:"پیرمحل", text:"20 منٹ میں آ کر موٹر ٹھیک کر دی"},
+  {name:"علی رضا", city:"کمالیہ", text:"300 روپے میں بہترین کام"},
+  {name:"محمد شہزاد", city:"رجانہ", text:"وائرنگ صاف ستھرا کام"},
+  {name:"رانا بلال", city:"پیرمحل", text:"رات 11 بجے آدھے گھنٹے میں پہنچ گئے"},
+] html>
 <html lang="ur" dir="ltr">
 <head>
 <meta charset="UTF-8">
